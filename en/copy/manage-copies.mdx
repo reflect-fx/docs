@@ -19,7 +19,9 @@ description: "Run, stop, restart and delete your copies."
 | **Running** | New trades of the source are copied. |
 | **Starting** / **Stopping** | The copy is starting or stopping on our servers. |
 | **Stopped** | Nothing is copied. Open positions stay as they are. |
-| **State unknown** | Its state could not be read. It may still be running. |
+| **Never run** | The copy was created but never started. |
+| **May still be running** | We lost contact with the server running this copy. Stop it to be sure. |
+| **Status not read** | Its status could not be read. It may still be running. |
 
 Under each line, the last event of the copy is shown, such as a trade that was not copied and why. Only the latest event is kept.
 
@@ -31,8 +33,8 @@ Click a copy to open its details.
   ![The details of a copy](/images/en/copy-panel.jpg)
 </Frame>
 
-- **Restart**: restart a copy that stopped.
-- **Change settings**: change the size, the minimum and the delay. See [Copy settings](/en/copy/copy-settings).
+- **Start** or **Restart**: start a copy that is stopped or has never run. **Stop this copy**: stop a copy that is starting, running or may still be running.
+- **Change settings**: change the size, the minimum, the delay and, on cTrader, the own IP. See [Copy settings](/en/copy/copy-settings).
 - **Close every position on this account**: closes every open position on the account at the market price, copied or not. On cTrader, pending orders are cancelled too. The copy keeps running or stopped as it is.
 - **Delete this copy**: removes the copy for good, with its settings. Positions already open stay open.
 

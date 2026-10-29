@@ -19,7 +19,9 @@ description: "Lancer, arrêter, relancer et supprimer vos copies."
 | **En cours** | Les nouveaux trades de la source sont copiés. |
 | **Démarrage** / **Arrêt en cours** | La copie démarre ou s'arrête sur nos serveurs. |
 | **Arrêtée** | Rien n'est copié. Les positions ouvertes restent telles quelles. |
-| **État inconnu** | Son état n'a pas pu être lu. Elle tourne peut-être encore. |
+| **Jamais lancée** | La copie a été créée mais jamais lancée. |
+| **Peut-être encore en cours** | Nous avons perdu le contact avec le serveur qui fait tourner cette copie. Arrêtez-la pour en être sûr. |
+| **Statut indisponible** | Son statut n'a pas pu être lu. Elle tourne peut-être encore. |
 
 Sous chaque ligne s'affiche le dernier événement de la copie, par exemple un trade non copié et pourquoi. Seul le dernier événement est conservé.
 
@@ -31,11 +33,11 @@ Cliquez sur une copie pour ouvrir son détail.
   ![Le détail d'une copie](/images/fr/copy-panel.jpg)
 </Frame>
 
-- **Relancer** : relance une copie arrêtée.
-- **Modifier les réglages** : change la taille, le minimum et le délai. Voir [Réglages d'une copie](/fr/copy/copy-settings).
+- **Lancer** ou **Relancer** : lance une copie arrêtée ou jamais lancée. **Arrêter cette copie** : arrête une copie qui démarre, en cours ou qui tourne peut-être encore.
+- **Modifier les réglages** : change la taille, le minimum, le délai et, sur cTrader, l'IP dédiée. Voir [Réglages d'une copie](/fr/copy/copy-settings).
 - **Clôturer toutes les positions de ce compte** : clôture au prix du marché chaque position ouverte sur le compte, copiée ou non. Sur cTrader, les ordres en attente sont aussi annulés. La copie reste en cours ou arrêtée comme elle l'était.
 - **Supprimer cette copie** : supprime la copie pour de bon, avec ses réglages. Les positions déjà ouvertes restent ouvertes.
 
 ## Tout clôturer
 
-**Tout clôturer**, en haut de **Copies**, clôture au prix du marché chaque position ouverte sur tous les comptes où vos copies tradent, copiée ou non. Sur cTrader, les ordres en attente sont aussi annulés. Vos copies restent en cours ou arrêtées comme elles l'étaient.
+**Tout clôturer**, en haut de **Copies**, clôture au prix du marché chaque position ouverte sur tous les comptes qui reçoivent vos copies, copiée ou non. Sur cTrader, les ordres en attente sont aussi annulés. Vos copies restent en cours ou arrêtées comme elles l'étaient.
