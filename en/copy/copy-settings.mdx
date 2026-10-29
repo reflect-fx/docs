@@ -1,0 +1,48 @@
+---
+title: "Copy settings"
+description: "Size, minimum volume, delays and own IP of each copy."
+---
+
+Each copy has its own settings. To change them, stop the copy, open it in **Copies** and click **Change settings**.
+
+<Frame>
+  ![The Change settings window](/images/en/change-settings.jpg)
+</Frame>
+
+## Size
+
+The **Size** sets each copy's volume, as a multiple of the leader's volume, adjusted to your balance.
+
+- From `0.01` to `10`, in steps of `0.01`. The default is `1.00`.
+- At `1.00`, an account with half the leader's balance opens half the leader's volume.
+- At `0.50`, it opens half of that. At `2.00`, twice that.
+
+| Leader's balance | Your balance | Leader's trade | Size | Your copy |
+|---|---|---|---|---|
+| 10,000 | 10,000 | 1.00 lot | 1.00 | 1.00 lot |
+| 10,000 | 5,000 | 1.00 lot | 1.00 | 0.50 lot |
+| 10,000 | 10,000 | 1.00 lot | 0.50 | 0.50 lot |
+
+## Open at the minimum
+
+When a trade sized for your account comes out under the symbol's smallest volume, it opens at that smallest volume. Turned off, the trade is not opened and you are told. It is on by default.
+
+## Delay each copy
+
+A delay makes each copied trade wait before it opens or closes. Turn on **Delay each copy**, then set the waits in **Settings**, under **Copy delays**. All values are in milliseconds (1,000 ms = 1 second).
+
+| Field | Meaning |
+|---|---|
+| **Before a copy opens** | Fixed wait before a copied trade opens. |
+| **Before a copy closes** | Fixed wait before a copied trade closes. |
+| **Smallest** / **Largest** | A random extra wait, between these two values, added to each copy. |
+
+Click **Save**. The delays apply only to running copies with **Delay each copy** on.
+
+<Frame>
+  ![The Copy delays section of Settings](/images/en/copy-delays.jpg)
+</Frame>
+
+## Use this account's own IP
+
+On a cTrader account, **Use this account's own IP** sends the copy's orders through the proxy set on the account. See [Trade from your own IP](/en/accounts/proxy).

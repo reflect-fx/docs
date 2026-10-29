@@ -1,0 +1,48 @@
+---
+title: "Suivre un leader"
+description: "Demandez à copier un trader, puis copiez ses trades."
+---
+
+Pour copier un trader, vous lui envoyez une demande de suivi. Il voit votre nom et accepte ou refuse.
+
+## Envoyer une demande de suivi
+
+<Steps>
+  <Step title="Obtenez l'ID de suivi">
+    Demandez son ID de suivi au leader : 12 caractères, par exemple `7K2M QX4P 9HTA`.
+  </Step>
+  <Step title="Ouvrez Suivre un leader">
+    Dans **Copies**, cliquez sur **Suivre un leader**.
+  </Step>
+  <Step title="Collez l'ID">
+    Collez-le dans **ID de suivi du leader**, exactement comme le leader vous l'a donné, et cliquez sur **Envoyer la demande**.
+  </Step>
+</Steps>
+
+<Frame>
+  ![La fenêtre Suivre un leader](/images/fr/follow-leader.jpg)
+</Frame>
+
+La demande apparaît sous **Leaders que vous suivez** avec l'état **En attente**. Elle prend fin après 7 jours si le leader ne répond pas.
+
+## États d'une demande
+
+| État | Signification |
+|---|---|
+| **En attente** | Le leader n'a pas encore répondu. Vous pouvez cliquer sur **Annuler la demande**. |
+| **Suivi** | Le leader a accepté. Vous pouvez le copier. |
+| **Refusée** | Le leader a refusé. Vous pourrez redemander après 7 jours. |
+| **Expirée** | Le leader n'a pas répondu en 7 jours. |
+| **Terminée** | Le suivi a pris fin. Vos copies de ce leader se sont arrêtées. |
+
+Vous voyez le taux de réussite du leader, ses trades clôturés et depuis quand il trade, jamais son solde.
+
+## Copier le leader
+
+Quand la demande affiche **Suivi**, cliquez sur **Copier ce leader**. Cochez les comptes sur lesquels copier, réglez la taille de chacun et cliquez sur **Créer et lancer**, ou sur **Créer sans lancer** pour la lancer vous-même plus tard. Chaque compte coché devient une copie.
+
+Les comptes qui reçoivent des copies ont besoin d'une licence. Voir [Licences](/fr/licences).
+
+## Ne plus suivre
+
+Cliquez sur **Ne plus suivre**. Vos copies de ce leader s'arrêtent aussitôt. Les positions déjà ouvertes restent ouvertes.

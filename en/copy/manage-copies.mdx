@@ -1,0 +1,41 @@
+---
+title: "Manage your copies"
+description: "Run, stop, restart and delete your copies."
+---
+
+<Frame>
+  ![The Copies page](/images/en/copies.jpg)
+</Frame>
+
+**Copies** lists your copies by source: your own accounts first, then the leaders you follow. Each line shows the account that receives the trades, its size and its state.
+
+- Turn the switch on the right of a line on or off to run or stop that copy.
+- **Run all** and **Stop all** run or stop every copy.
+
+## Copy states
+
+| State | Meaning |
+|---|---|
+| **Running** | New trades of the source are copied. |
+| **Starting** / **Stopping** | The copy is starting or stopping on our servers. |
+| **Stopped** | Nothing is copied. Open positions stay as they are. |
+| **State unknown** | Its state could not be read. It may still be running. |
+
+Under each line, the last event of the copy is shown, such as a trade that was not copied and why. Only the latest event is kept.
+
+## Copy details
+
+Click a copy to open its details.
+
+<Frame>
+  ![The details of a copy](/images/en/copy-panel.jpg)
+</Frame>
+
+- **Restart**: restart a copy that stopped.
+- **Change settings**: change the size, the minimum and the delay. See [Copy settings](/en/copy/copy-settings).
+- **Close every position on this account**: closes every open position on the account at the market price, copied or not. On cTrader, pending orders are cancelled too. The copy keeps running or stopped as it is.
+- **Delete this copy**: removes the copy for good, with its settings. Positions already open stay open.
+
+## Close all positions
+
+**Close all positions**, at the top of **Copies**, closes every open position on all the accounts your copies trade onto, at the market price, copied or not. On cTrader, pending orders are cancelled too. Your copies keep running or stopped as they are.

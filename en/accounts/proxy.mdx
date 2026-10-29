@@ -1,0 +1,42 @@
+---
+title: "Trade from your own IP"
+description: "Connect a cTrader account through your own proxy."
+---
+
+By default, your accounts connect to the broker from our servers. A cTrader account can instead connect through an HTTP proxy you add, so its orders come from the proxy's IP address.
+
+<Note>
+  The proxy is offered on cTrader accounts only.
+</Note>
+
+## Add a proxy
+
+<Steps>
+  <Step title="Open the account">
+    In **Accounts**, click the cTrader account. Its details open.
+  </Step>
+  <Step title="Enter the proxy">
+    Under **Proxy**, click **Add a proxy** and type it in one of these shapes:
+
+    ```text
+    ip:port
+    ip:port:username:password
+    username:password:ip:port
+    hostname:port:username:password
+    username:password@ip:port
+    ```
+
+    Only HTTP proxies are used.
+  </Step>
+  <Step title="Save">
+    Click **Save**.
+  </Step>
+</Steps>
+
+## Use it for a copy
+
+A copy onto this account goes through the proxy only with **Use this account's own IP** turned on. See [Copy settings](/en/copy/copy-settings).
+
+## Change or remove a proxy
+
+Under **Proxy**, click **Change** to edit it, or **Clear** to remove it. Without a proxy, the account connects directly from our servers.
