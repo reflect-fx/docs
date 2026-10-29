@@ -1,0 +1,41 @@
+---
+title: "Gérer vos copies"
+description: "Lancer, arrêter, relancer et supprimer vos copies."
+---
+
+<Frame>
+  ![La page Copies](/images/fr/copies.jpg)
+</Frame>
+
+**Copies** liste vos copies par source : vos propres comptes d'abord, puis les leaders que vous suivez. Chaque ligne montre le compte qui reçoit les trades, sa taille et son état.
+
+- Activez ou désactivez l'interrupteur à droite d'une ligne pour lancer ou arrêter cette copie.
+- **Tout lancer** et **Tout arrêter** lancent ou arrêtent toutes les copies.
+
+## États d'une copie
+
+| État | Signification |
+|---|---|
+| **En cours** | Les nouveaux trades de la source sont copiés. |
+| **Démarrage** / **Arrêt en cours** | La copie démarre ou s'arrête sur nos serveurs. |
+| **Arrêtée** | Rien n'est copié. Les positions ouvertes restent telles quelles. |
+| **État inconnu** | Son état n'a pas pu être lu. Elle tourne peut-être encore. |
+
+Sous chaque ligne s'affiche le dernier événement de la copie, par exemple un trade non copié et pourquoi. Seul le dernier événement est conservé.
+
+## Détail d'une copie
+
+Cliquez sur une copie pour ouvrir son détail.
+
+<Frame>
+  ![Le détail d'une copie](/images/fr/copy-panel.jpg)
+</Frame>
+
+- **Relancer** : relance une copie arrêtée.
+- **Modifier les réglages** : change la taille, le minimum et le délai. Voir [Réglages d'une copie](/fr/copy/copy-settings).
+- **Clôturer toutes les positions de ce compte** : clôture au prix du marché chaque position ouverte sur le compte, copiée ou non. Sur cTrader, les ordres en attente sont aussi annulés. La copie reste en cours ou arrêtée comme elle l'était.
+- **Supprimer cette copie** : supprime la copie pour de bon, avec ses réglages. Les positions déjà ouvertes restent ouvertes.
+
+## Tout clôturer
+
+**Tout clôturer**, en haut de **Copies**, clôture au prix du marché chaque position ouverte sur tous les comptes où vos copies tradent, copiée ou non. Sur cTrader, les ordres en attente sont aussi annulés. Vos copies restent en cours ou arrêtées comme elles l'étaient.

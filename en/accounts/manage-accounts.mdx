@@ -1,0 +1,48 @@
+---
+title: "Manage your accounts"
+description: "Roles, groups, reconnecting and deleting an account."
+---
+
+<Frame>
+  ![The Accounts page](/images/en/accounts.jpg)
+</Frame>
+
+**Accounts** lists your accounts by role:
+
+- **Sources**: their trades are copied.
+- **Copiers**: they receive copies. The **Licence** column shows whether each one has a licence.
+- **Unused**: no copy uses them yet.
+
+Click an account to open its details.
+
+<Frame>
+  ![The details of an account](/images/en/account-panel.jpg)
+</Frame>
+
+| Section | What it shows |
+|---|---|
+| **Balance** | The balance read from the broker. Click **Read again** if it shows **Not read**. |
+| **Follow ID** | The ID others paste to ask to copy this account. Click **Share follow ID** to copy a ready-to-send sentence. |
+| **Copies from this account** | The copies it is the source of, with their size and state. |
+| **Last 30 days** | Its closed trades over the last 30 days. |
+| **Proxy** | cTrader accounts only. See [Trade from your own IP](/en/accounts/proxy). |
+| **Role** | **Make it a follower** or **Make it a leader**. An account leads or copies, not both. |
+| **Groups** | The groups the account is in. |
+
+## Groups
+
+A group gathers accounts so you can find them. An account can be in several groups. Click the folder button next to **Link an account** to create, rename or delete groups, and use **All groups** to show one group only.
+
+## Reconnect an account
+
+When a broker sign-in ends, the account shows **Needs reconnecting**. Click **Reconnect** and sign in again to keep copying.
+
+## Delete an account
+
+In the account's details, click **Delete this account**, type the login to confirm and click **Delete account**.
+
+- Its connection to the broker goes, and so does every stopped copy that uses it, your followers' included.
+- Copies still running on it must be stopped first.
+- Positions at your broker stay open.
+
+This cannot be undone.

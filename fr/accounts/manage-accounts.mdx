@@ -1,0 +1,48 @@
+---
+title: "Gérer vos comptes"
+description: "Rôles, groupes, reconnexion et suppression d'un compte."
+---
+
+<Frame>
+  ![La page Comptes](/images/fr/accounts.jpg)
+</Frame>
+
+**Comptes** range vos comptes par rôle :
+
+- **Sources** : leurs trades sont copiés.
+- **Copieurs** : ils reçoivent des copies. La colonne **Licence** indique si chacun a une licence.
+- **Inutilisés** : aucune copie ne les utilise encore.
+
+Cliquez sur un compte pour ouvrir son détail.
+
+<Frame>
+  ![Le détail d'un compte](/images/fr/account-panel.jpg)
+</Frame>
+
+| Section | Ce qu'elle montre |
+|---|---|
+| **Solde** | Le solde lu chez le broker. Cliquez sur **Actualiser** s'il affiche **Indisponible**. |
+| **ID de suivi** | L'ID que d'autres collent pour demander à copier ce compte. Cliquez sur **Partager l'ID de suivi** pour copier une phrase prête à envoyer. |
+| **Copies depuis ce compte** | Les copies dont il est la source, avec leur taille et leur état. |
+| **30 derniers jours** | Ses trades clôturés des 30 derniers jours. |
+| **Proxy** | Comptes cTrader seulement. Voir [Trader depuis votre propre IP](/fr/accounts/proxy). |
+| **Rôle** | **En faire un follower** ou **En faire un leader**. Un compte est leader ou copie, pas les deux. |
+| **Groupes** | Les groupes du compte. |
+
+## Groupes
+
+Un groupe rassemble des comptes pour les retrouver. Un compte peut être dans plusieurs groupes. Cliquez sur le bouton dossier à côté de **Relier un compte** pour créer, renommer ou supprimer des groupes, et utilisez **Tous les groupes** pour n'afficher qu'un groupe.
+
+## Reconnecter un compte
+
+Quand la connexion au broker prend fin, le compte affiche **À reconnecter**. Cliquez sur **Reconnecter** et connectez-vous à nouveau pour continuer à copier.
+
+## Supprimer un compte
+
+Dans le détail du compte, cliquez sur **Supprimer ce compte**, tapez l'identifiant pour confirmer et cliquez sur **Supprimer le compte**.
+
+- Sa connexion au broker disparaît, ainsi que chaque copie arrêtée qui l'utilise, y compris celles de vos followers.
+- Les copies encore en cours sur ce compte doivent d'abord être arrêtées.
+- Les positions chez votre broker restent ouvertes.
+
+C'est définitif.

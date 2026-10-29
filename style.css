@@ -1,0 +1,14 @@
+[data-component-part="localization-select-trigger"]::before,
+[data-component-part="localization-select-item"]::before {
+  content: "";
+  flex: none;
+  width: 18px;
+  height: 12px;
+  border-radius: 2px;
+  background: url("/flags/gb.svg") center / cover no-repeat;
+}
+
+html[data-current-path^="/fr"] [data-component-part="localization-select-trigger"]::before,
+[data-component-part="localization-select-item"][id$="-fr"]::before {
+  background-image: url("/flags/fr.svg");
+}

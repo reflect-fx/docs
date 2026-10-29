@@ -1,0 +1,48 @@
+---
+title: "Réglages d'une copie"
+description: "Taille, volume minimum, délais et IP dédiée de chaque copie."
+---
+
+Chaque copie a ses propres réglages. Pour les changer, arrêtez la copie, ouvrez-la dans **Copies** et cliquez sur **Modifier les réglages**.
+
+<Frame>
+  ![La fenêtre Modifier les réglages](/images/fr/change-settings.jpg)
+</Frame>
+
+## Taille
+
+La **Taille** fixe le volume de chaque copie, en multiple du volume du leader, ajusté à votre solde.
+
+- De `0,01` à `10`, par pas de `0,01`. La valeur par défaut est `1,00`.
+- À `1,00`, un compte qui a la moitié du solde du leader ouvre la moitié de son volume.
+- À `0,50`, il ouvre la moitié de ce volume. À `2,00`, le double.
+
+| Solde du leader | Votre solde | Trade du leader | Taille | Votre copie |
+|---|---|---|---|---|
+| 10 000 | 10 000 | 1,00 lot | 1,00 | 1,00 lot |
+| 10 000 | 5 000 | 1,00 lot | 1,00 | 0,50 lot |
+| 10 000 | 10 000 | 1,00 lot | 0,50 | 0,50 lot |
+
+## Ouvrir au minimum
+
+Quand un trade dimensionné pour votre compte tombe sous le plus petit volume du symbole, il s'ouvre à ce volume minimum. Désactivé, le trade n'est pas ouvert et vous êtes prévenu. C'est activé par défaut.
+
+## Retarder chaque copie
+
+Un délai fait attendre chaque trade copié avant son ouverture ou sa clôture. Activez **Retarder chaque copie**, puis réglez les attentes dans **Réglages**, sous **Délais de copie**. Toutes les valeurs sont en millisecondes (1 000 ms = 1 seconde).
+
+| Champ | Signification |
+|---|---|
+| **Avant d'ouvrir un trade copié** | Attente fixe avant l'ouverture d'un trade copié. |
+| **Avant de clôturer un trade copié** | Attente fixe avant la clôture d'un trade copié. |
+| **Minimum** / **Maximum** | Un délai supplémentaire aléatoire, entre ces deux valeurs, ajouté à chaque copie. |
+
+Cliquez sur **Enregistrer**. Les délais ne s'appliquent qu'aux copies en cours dont **Retarder chaque copie** est activé.
+
+<Frame>
+  ![La section Délais de copie des Réglages](/images/fr/copy-delays.jpg)
+</Frame>
+
+## Utiliser l'IP dédiée de ce compte
+
+Sur un compte cTrader, **Utiliser l'IP dédiée de ce compte** fait passer les ordres de la copie par le proxy réglé sur le compte. Voir [Trader depuis votre propre IP](/fr/accounts/proxy).
